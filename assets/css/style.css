@@ -80,7 +80,6 @@ nav {
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
-    ;
     color: black;
 }
 
@@ -118,11 +117,59 @@ nav {
 }
 
 
+/* Main Content */
 
+main {
+    flex: 1 0 auto;
+    margin-top: 81px;
+    background-image: linear-gradient(to right, #fffc00, #ffd800, #ffb400, #ff8e00, #ff6700, #f35004, #e6350a, #d9070e, #bc0d13, #a01115, #841315, #691414); ;
+}
+
+#car-img img {
+    width: 100vw;
+    max-width: 500px;
+    align-self: flex-end;
+}
+
+#cover-page-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#cover-page-text>h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+#cover-page-text>p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+#cover-page-text>div {
+    margin: 20px 0;
+}
+
+.clickables {
+    padding: 5px 20px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: inherit;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: lightblue;
+}
 
 /* Media Query For screens (768px and Above) */
 
 @media screen and (min-width: 768px) {
+    /* Header */
     nav {
         display: block;
         position: relative;
@@ -150,3 +197,8 @@ nav {
 
 
 }
+
+/* Media Query For screen size 425 and up */
+
+
+
