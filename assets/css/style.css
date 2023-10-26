@@ -1,0 +1,152 @@
+/* Google fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&family=Roboto:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "roboto", sans-serif;
+    min-width: fit-content;
+}
+
+/* Navigation */
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    min-height: 81px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #fffc00, #ffd800, #ffb400, #ff8e00, #ff6700, #f35004, #e6350a, #d9070e, #bc0d13, #a01115, #841315, #691414);
+}
+
+/* Logo */
+header>a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+header img {
+    width: 50%;
+    max-width: 200px;
+    min-width: 107px;
+}
+
+/* Drop Down Menu */
+
+#menu {
+    list-style: none;
+    font-size: 120%;
+    letter-spacing: 2px;
+}
+
+#menu>li {
+    padding: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.active {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+/* Drop down Nav Toggle */
+
+nav {
+    position: absolute;
+    background-color: inherit;
+    width: 100%;
+    left: 0;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+    ;
+    color: black;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle:checked~nav {
+    display: block;
+    padding-left: 1rem;
+    background-image: linear-gradient(to right, #fffc00, #ffd800, #ffb400, #ff8e00, #ff6700, #f35004, #e6350a, #d9070e, #bc0d13, #a01115, #841315, #691414);
+}
+
+
+#nav-toggle-label {
+    font-size: 2rem;
+    padding-right: 1rem;
+
+}
+
+/* Icons Container */
+
+#icons-container>ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+#icons-container>ul>.sign-in,
+#icons-container>ul>.sign-in-text {
+    font-size: 130%;
+    padding-bottom: 5px;
+    margin-right: 20px;
+}
+
+
+
+
+/* Media Query For screens (768px and Above) */
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: 100vw;
+        padding-right: 1rem;
+    }
+
+    .register {
+        display: none;
+    }
+
+    #menu,
+    header {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 3rem;
+    }
+
+    #nav-toggle-label {
+        display: none;
+    }
+
+
+}
