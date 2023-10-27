@@ -183,8 +183,14 @@ main {
 
 /* Featured Cars */ 
 #featured-container { 
-    background-color: white;
+    background-color: blue;
 }
+
+#featured-car-box {
+    display: flex;
+   
+}
+
 #featured-car-box img {
     flex: 1 1 auto;
     max-width: 200px;
